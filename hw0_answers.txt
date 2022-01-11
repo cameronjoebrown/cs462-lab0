@@ -1,0 +1,12 @@
+5. I don't get the same result on both. On the one I created it returns successfully
+   but on the other, it says it was not allowed by channel policy.
+
+6. Returns the following because the channel doesn't exist:
+   {"error":"Error: ECI not found cky9qdkpc000nw7zv1ind55az"}
+
+7. It returns the following because of the rule we added in the ruleset 
+   allows the use of echo hello:
+{"eid":"cky9r4cys0010w7zv4gqm4ofp","directives":[{"type":"directive","name":"say","options":{"something":"Hello World"},"meta":{"rid":"hello_world","rule_name":"hello_world","txnId":"cky9r4cys0010w7zv4gqm4ofp"}}]}
+
+8. It returns this: {"eid":"cky9r6kux0012w7zvhnzw2zcf","directives":[]}
+   because there are no applicable rules in the ruleset
